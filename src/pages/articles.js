@@ -95,7 +95,7 @@ const articles = () => {
   return (
     <>
       <Head>
-        <title>About | Shanto&apos;1s Workshop</title>
+        <title>Articles | Shanto&apos;s Workshop</title>
         <meta name="description" content="my description" />
       </Head>
       <TransitionEffect />

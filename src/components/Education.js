@@ -7,7 +7,7 @@ const Details = ({ type, time, place, info }) => {
   return (
     <li
       ref={ref}
-      className=" my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]"
+      className=" my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-start justify-between md:w-[80%]"
     >
       <LiIcon reference={ref} />
       <motion.div
@@ -48,24 +48,22 @@ const Education = () => {
         <ul className=" w-full flex flex-col items-center justify-between ml-4 xs:ml-2">
           <Details
             type="Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
+            time="2015-2022"
+            place="Daffodil International University"
             info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
          Intelligence."
           />
           <Details
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-         Intelligence."
+            type="Higher Secondary Certificate"
+            time="2011-2022"
+            place="MegaCity College"
+            info="Board: Dhaka, GPA: 4.30"
           />
           <Details
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-         Intelligence."
+            type="Secondary School Certificate"
+            time="2009-2010"
+            place="Milestone College"
+            info="Board: Dhaka, GPA: 4.44"
           />
         </ul>
       </div>

@@ -3,7 +3,7 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
-import profilePic from "../../public/images/profile/developer-pic-2.jpg";
+import profilePic from "../../public/images/profile/shanto-pic.jpeg";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
@@ -37,7 +37,7 @@ const about = () => {
   return (
     <>
       <Head>
-        <title>About | Shanto&apos;1s Workshop</title>
+        <title>About | Shanto&apos;s Workshop</title>
         <meta name="description" content="my description" />
       </Head>
       <TransitionEffect />
@@ -50,25 +50,16 @@ const about = () => {
                 Biography
               </h2>
               <p className="font-medium">
-                Hi, I&apos;m CodeBucks, a web developer and UI/UX designer with
-                a passion for creating beautiful, functional, and user-centered
-                digital experiences. With 4 years of experience in the field. I
-                am always looking for new and innovative ways to bring my
-                clients&apos; visions to life.
+              Hey there, I&apos;m Ashik Ali Shanto, a web and app developer with a passion for creating innovative solutions to complex problems. 
               </p>
 
               <p className=" my-4 font-medium">
-                I believe that design is about more than just making things look
-                pretty – it&apos;s about solving problems and creating
-                intuitive, enjoyable experiences for users.
+              My journey into the world of software development started with Android Studio, where I honed my skills in building robust and user-friendly applications.
+              Also I&apos;m also an accomplished Unity3D developer, having created two captivating games based on C#. 
               </p>
 
               <p className=" font-medium">
-                Whether I&apos;m working on a website, mobile app, or other
-                digital product, I bring my commitment to design excellence and
-                user-centered thinking to every project I work on. I look
-                forward to the opportunity to bring my skills and passion to
-                your next project.
+              From there, I expanded my knowledge to become a MERN full-stack developer. This allowed me to broaden my skills to include backend development, opening up a whole new world of possibilities for my projects. I love working with MongoDB, Express.js, React, and Node.js and using them to develop efficient and scalable applications that are able to handle a wide range of demands.
               </p>
             </div>
             <div className=" col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
@@ -85,7 +76,7 @@ const about = () => {
             <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3">
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl ">
-                  <AnimatedNumbers value={50} />+
+                  <AnimatedNumbers value={10} />+
                 </span>
                 <h2 className=" text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
                   Satisfied Clients
@@ -94,7 +85,7 @@ const about = () => {
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold 
                 md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumbers value={40} />+
+                  <AnimatedNumbers value={20} />+
                 </span>
                 <h2 className=" text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
                   Projects completed
@@ -102,7 +93,7 @@ const about = () => {
               </div>
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumbers value={4} />+
+                  <AnimatedNumbers value={3} />+
                 </span>
                 <h2 className=" text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
                   Years of Experience

@@ -5,7 +5,13 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import project1 from "../../public/images/projects/run-shadow-run-banner.jpg";
+import project2 from "../../public/images/projects/lehalua-banner.png";
+import project3 from "../../public/images/projects/nebula-banner.jpeg";
+import project4 from "../../public/images/projects/dwd-globa-edu-banner.png";
+import project5 from "../../public/images/projects/pregnant2parenting.png";
+import project6 from "../../public/images/projects/amena-banner.png";
+import project7 from "../../public/images/projects/servicechai-banner.png";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 
@@ -104,7 +110,7 @@ const projects = () => {
   return (
     <>
       <Head>
-        <title>Projects | Shanto&apos;1s Workshop</title>
+        <title>Projects | Shanto&apos;s Workshop</title>
         <meta name="description" content="my description" />
       </Head>
       <TransitionEffect />
@@ -118,63 +124,72 @@ const projects = () => {
           <div className=" grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className=" col-span-12">
               <FeaturedProjects
-                title=" Crypto Screener Application"
+                title="Run Shadow Run"
                 img={project1}
-                summery="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
-                link="/"
+                summery="It’s an endless running 2D platform mobile game, made on Unity3D with C# language."
+                link="https://apkcombo.com/run-shadow-run/com.deshiinc.runshadowrun/"
                 github="/"
-                type="Featured Projects"
+                type="Android Game"
               />
             </div>
             <div className=" col-span-6 sm:col-span-12">
               {" "}
               <Project
-                title=" Crypto Screener Application"
-                img={project1}
-                link="/"
+                title="Lehalua Website"
+                img={project2}
+                link="https://lehalua.com/"
                 github="/"
-                type="Featured Projects"
+                type="Wordpress E-Commerce"
               />
             </div>
-            <div className=" col-span-6 sm:col-span-12 sm:col-span-12">
+            <div className=" col-span-6 sm:col-span-12">
               <Project
-                title=" Crypto Screener Application"
-                img={project1}
-                link="/"
+                title=" DWD Global Education"
+                img={project4}
+                link="https://dwdglobaledu.com/"
                 github="/"
-                type="Featured Projects"
+                type="Wordpress Website"
               />
             </div>
 
             <div className=" col-span-12 ">
               <FeaturedProjects
-                title=" Crypto Screener Application"
-                img={project1}
-                summery="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-local currency."
-                link="/"
+                title="Pregnant2Parenting"
+                img={project5}
+                summery="It’s a native app, developed on Android Studio with Java Language. Became 2nd in ranking on UK global pregnant app category in 2019"
+                link="https://play.google.com/store/apps/details?id=com.deshiinc.pregnant2parenting"
                 github="/"
-                type="Featured Projects"
+                type="Android App"
               />
             </div>
 
             <div className=" col-span-6 sm:col-span-12">
               <Project
-                title=" Crypto Screener Application"
-                img={project1}
-                link="/"
-                github="/"
-                type="Featured Projects"
+                title="Amena BD"
+                img={project6}
+                link="https://amena.com.bd/"
+                github="#"
+                type="Website"
               />
             </div>
             <div className=" col-span-6 sm:col-span-12">
               <Project
-                title=" Crypto Screener Application"
-                img={project1}
-                link="/"
+                title="ServiceChai LTD"
+                img={project7}
+                link="https://servicechai.com/"
+                github="#"
+                type="Wordpress Website"
+              />
+            </div>
+            
+            <div className=" col-span-12 ">
+              <FeaturedProjects
+                title="Nebula"
+                img={project3}
+                summery="It’s an eight Level 2d Platform Game with Boss Mode, Where hero have to rescue his Heroine from villain. Made on Unity3D with C# Language."
+                link="https://mega.nz/file/QtQRxSKT#8UTz223bOGnINdrY5wg7Do2W5X-6hFJ63jn-IV6kpog"
                 github="/"
-                type="Featured Projects"
+                type="Android Game"
               />
             </div>
           </div>

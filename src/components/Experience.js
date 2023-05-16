@@ -51,34 +51,28 @@ const Experience = () => {
         />
         <ul className=" w-full flex flex-col items-center justify-between ml-4 xs:ml-2 ">
           <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="www.google.com"
+            position="Full-Stack Developer"
+            company="ServiceChai"
+            companyLink="www.servicechai.com"
             time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's 
-            search engine, including improving the accuracy and relevance of search results and 
-            developing new tools for data analysis and visualization."
+            address="Dhaka, Bangladesh"
+            work="Created website and also created HRM System, Also Worked with Business Development Team"
           />
           <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="www.google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's 
-            search engine, including improving the accuracy and relevance of search results and 
-            developing new tools for data analysis and visualization."
+            position="App Developer"
+            company="Deshi Inc."
+            companyLink="www.deshiinc.com"
+            time="2017-2019"
+            address="Dhaka, Bangladesh"
+            work="Worked on various app for Playstore, Created games on Unity3D, Also worked on e-commerce website development"
           />
           <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="www.google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's 
-            search engine, including improving the accuracy and relevance of search results and 
-            developing new tools for data analysis and visualization."
+            position="IT & Logistics Support Officer"
+            company="Biscotex Far East LLC."
+            companyLink="#"
+            time="2014-2015"
+            address="Dhaka, Bangladesh"
+            work="Worked mainly as a graphics designer. Worked on IT related sector"
           />
         </ul>
       </div>
