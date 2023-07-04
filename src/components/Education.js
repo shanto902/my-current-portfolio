@@ -48,7 +48,7 @@ const Education = () => {
         <ul className=" w-full flex flex-col items-center justify-between ml-4 xs:ml-2">
           <Details
             type="Bachelor Of Science In Computer Science"
-            time="2015-2022"
+            time="2015-Currently Pursuing"
             place="Daffodil International University"
             info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
          Intelligence."

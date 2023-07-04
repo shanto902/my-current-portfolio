@@ -489,3 +489,16 @@ export const LinkArrow = ({ className, ...rest }) => (
   </svg>
 );
 
+export const PlayVideoIcon = ({fillColor, className, ...rest }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={88} height={64}
+  className={`w-full h-auto ${className}`}
+    {...rest}>
+    <title>{"noun-video-1569867"}</title>
+    <path
+      fill={`${fillColor}`}
+      fillRule="nonzero"
+      d="M17 0C7.634 0 0 7.634 0 17v30c0 9.366 7.634 17 17 17h54c9.366 0 17-7.634 17-17V17c0-9.366-7.634-17-17-17H17Zm0 6h54c6.146 0 11 4.854 11 11v30c0 6.146-4.854 11-11 11H17c-6.146 0-11-4.854-11-11V17c0-6.146 4.854-11 11-11Zm20 13v26l22-13-22-13Z"
+    />
+  </svg>
+);
+

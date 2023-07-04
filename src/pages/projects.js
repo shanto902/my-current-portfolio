@@ -12,12 +12,23 @@ import project4 from "../../public/images/projects/dwd-globa-edu-banner.png";
 import project5 from "../../public/images/projects/pregnant2parenting.png";
 import project6 from "../../public/images/projects/amena-banner.png";
 import project7 from "../../public/images/projects/servicechai-banner.png";
+import project8 from "../../public/images/projects/musically.png";
+import project9 from "../../public/images/projects/bistro_boss.png";
+import project10 from "../../public/images/projects/toy-verse.png";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
 
-const FeaturedProjects = ({ type, title, summery, img, link, github }) => {
+const FeaturedProjects = ({
+  type,
+  title,
+  summery,
+  img,
+  link,
+  github,
+  technology,
+}) => {
   return (
     <article className=" w-full flex items-center justify-between relative rounded-br-2xl rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12  dark:bg-dark dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
       <div className=" absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]" />
@@ -47,12 +58,26 @@ const FeaturedProjects = ({ type, title, summery, img, link, github }) => {
             {title}
           </h2>
         </Link>
-        <p className="my-2 font-medium text-dark dark:text-light sm:text-sm ">{summery}</p>
+        <ul className="list-disc ml-4">
+          {summery.split("•").map((item, index) => (
+            <li
+              key={index}
+              className="my-2 font-medium text-dark dark:text-light sm:text-sm"
+            >
+              {item.trim()}
+            </li>
+          ))}
+        </ul>
 
-        <div className=" mt-2 flex items-center">
-          <Link href={github} target="_blank" className=" w-10">
+       { technology &&  <div className=" italic text-xs my-2">
+          {" "}
+          <span className="font-bold">Technologies</span>: {technology}
+        </div>
+}
+        <div className=" mt-2 flex items-center justify-between w-full">
+         {github &&  <Link href={github} target="_blank" className=" w-10">
             <GithubIcon />{" "}
-          </Link>
+          </Link>}
           <Link
             href={link}
             target="_blank"
@@ -85,9 +110,14 @@ const Project = ({ title, type, img, link, github }) => {
       </Link>
 
       <div className=" w-full flex flex-col items-start justify-between mt-4 ">
-        <span className="text-primary font-medium text-xl dark:text-primaryDark lg:text-lg md:text-base "> {type} </span>
+        <span className="text-primary font-medium text-xl dark:text-primaryDark lg:text-lg md:text-base ">
+          {" "}
+          {type}{" "}
+        </span>
         <Link href={link} target="_blank">
-          <h2 className=" my-2 w-full text-left text-3xl font-bold lg:text-2xl">{title}</h2>
+          <h2 className=" my-2 w-full text-left text-3xl font-bold lg:text-2xl">
+            {title}
+          </h2>
         </Link>
 
         <div className=" w-full mt-2 flex items-center justify-between">
@@ -98,9 +128,9 @@ const Project = ({ title, type, img, link, github }) => {
           >
             Visit
           </Link>
-          <Link href={github} target="_blank" className=" w-8 md:w-6">
+         {github &&  <Link href={github} target="_blank" className=" w-8 md:w-6">
             <GithubIcon />{" "}
-          </Link>
+          </Link>}
         </div>
       </div>
     </article>
@@ -117,28 +147,60 @@ const projects = () => {
       <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
         <Layout className=" pt-16">
           <AnimatedText
-            text="Imagination Trumps Knowledge!"
+            text="Dive into My Project Showcase"
             className=" mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl 
             xs:!text-4xl"
           />
           <div className=" grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className=" col-span-12">
               <FeaturedProjects
-                title="Run Shadow Run"
-                img={project1}
-                summery="It’s an endless running 2D platform mobile game, made on Unity3D with C# language."
-                link="https://apkcombo.com/run-shadow-run/com.deshiinc.runshadowrun/"
-                github="/"
-                type="Android Game"
+                title="Musically"
+                img={project8}
+                summery="Designed and developed a clean and modern website using Mongo, Express, ReactJs, Node
+                • Optimized website for speed and user experience
+                • Utilized responsive design to ensure compatibility across all devices
+                • Used Tailwind CSS"
+                link="https://vocal-vista.web.app/"
+                github="https://github.com/shanto902/Musically"
+                type="MERN Website"
+                technology="React.js, React Router, Firebase, Tailwind, Node, Express, MongoDB, Git"
               />
             </div>
+
+            <div className=" col-span-12">
+              <FeaturedProjects
+                title="Bistro Boss"
+                img={project9}
+                summery="A CRUD application exposed using a RESTful API made with Node.js
+                • Exposed POST, GET, PATCH and DELETE HTTP methods using Express
+                • Used TailwindCSS"
+                link="https://bistro-boss-6004a.web.app/"
+                github="https://github.com/shanto902/bistro-boss-client"
+                type="MERN Website"
+                technology="Node.js, Express, JavaScript, Firebase, Tailwind CSS, Git"
+              />
+            </div>
+
+            <div className=" col-span-12">
+              <FeaturedProjects
+                title="Toy Verse"
+                img={project10}
+                summery="Developed a responsive website for Toy House using ReactJS, Node.js, and Express
+                • Implemented optimizations for improved website speed and enhanced user experience
+                • Utilized Tailwind CSS framework to ensure compatibility across various devices"
+                link="https://toy-verse-6649e.web.app/"
+                github="https://github.com/shanto902/Toy-Verse-Client"
+                type="MERN Website"
+                technology="Node.js, Express, JavaScript, Firebase, Tailwind CSS, Git"
+              />
+            </div>
+
             <div className=" col-span-6 sm:col-span-12">
               {" "}
               <Project
                 title="Lehalua Website"
                 img={project2}
                 link="https://lehalua.com/"
-                github="/"
                 type="Wordpress E-Commerce"
               />
             </div>
@@ -147,7 +209,6 @@ const projects = () => {
                 title=" DWD Global Education"
                 img={project4}
                 link="https://dwdglobaledu.com/"
-                github="/"
                 type="Wordpress Website"
               />
             </div>
@@ -158,7 +219,6 @@ const projects = () => {
                 img={project5}
                 summery="It’s a native app, developed on Android Studio with Java Language. Became 2nd in ranking on UK global pregnant app category in 2019"
                 link="https://play.google.com/store/apps/details?id=com.deshiinc.pregnant2parenting"
-                github="/"
                 type="Android App"
               />
             </div>
@@ -168,7 +228,6 @@ const projects = () => {
                 title="Amena BD"
                 img={project6}
                 link="https://amena.com.bd/"
-                github="#"
                 type="Website"
               />
             </div>
@@ -177,18 +236,25 @@ const projects = () => {
                 title="ServiceChai LTD"
                 img={project7}
                 link="https://servicechai.com/"
-                github="#"
                 type="Wordpress Website"
               />
             </div>
-            
+            <div className=" col-span-12">
+              <FeaturedProjects
+                title="Run Shadow Run"
+                img={project1}
+                summery="It’s an endless running 2D platform mobile game, made on Unity3D with C# language."
+                link="https://apkcombo.com/run-shadow-run/com.deshiinc.runshadowrun/"
+                type="Android Game"
+              />
+            </div>
+
             <div className=" col-span-12 ">
               <FeaturedProjects
                 title="Nebula"
                 img={project3}
                 summery="It’s an eight Level 2d Platform Game with Boss Mode, Where hero have to rescue his Heroine from villain. Made on Unity3D with C# Language."
                 link="https://mega.nz/file/QtQRxSKT#8UTz223bOGnINdrY5wg7Do2W5X-6hFJ63jn-IV6kpog"
-                github="/"
                 type="Android Game"
               />
             </div>

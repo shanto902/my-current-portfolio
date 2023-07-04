@@ -51,12 +51,12 @@ const Experience = () => {
         />
         <ul className=" w-full flex flex-col items-center justify-between ml-4 xs:ml-2 ">
           <Details
-            position="Full-Stack Developer"
+            position="Web Developer"
             company="ServiceChai"
             companyLink="www.servicechai.com"
             time="2022-Present"
             address="Dhaka, Bangladesh"
-            work="Created website and also created HRM System, Also Worked with Business Development Team"
+            work="Designed and developed responsive websites using WordPress with custom themes and plugins, Collaborated on creating an efficient Office HR Management system using Laravel and REST API with MySQL., Conducted thorough testing and debugging for smooth functioning of websites and applications."
           />
           <Details
             position="App Developer"
