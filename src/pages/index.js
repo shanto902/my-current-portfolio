@@ -36,13 +36,13 @@ export default function Home() {
           window.my_modal_2.close();
           console.log(result.text);
           Swal.fire({
-            position: "top-end",
+            position: "center",
             icon: "success",
             title: "Email Sent Successfully",
             showConfirmButton: false,
             timer: 1500,
             customClass: {
-              popup: "dark:bg-dark dark:text-light",
+              popup: "dark:bg-dark dark:text-light rounded-xl",
             }
           });
 
@@ -52,13 +52,13 @@ export default function Home() {
           setLoading(false);
 
           Swal.fire({
-            position: "top-end",
+            position: "center",
             icon: "error",
             title: "Something Went Wrong! Please Try again",
             showConfirmButton: false,
             timer: 1500,
             customClass: {
-              popup: "dark:bg-dark dark:text-light",
+              popup: "dark:bg-dark dark:text-light rounded-xl",
             }
           });
           setMessage("Failed to send email. Please try again later.");
@@ -149,44 +149,34 @@ export default function Home() {
                   <h3 className="font-bold text-lg dark:text-white text-center">
                   Drop me a Line 
                   </h3>
-                  <div className="form-control">
-                    <label className="label">
-                      <span className="label-text dark:text-white">Name</span>
-                    </label>
+                  <div className="form-control my-4">
+                  
                     <input
                       name="user_name"
                       type="text"
                       placeholder="Enter Your Name"
-                      className="input input-bordered"
+                      className="input input-bordered dark:bg-dark dark:caret-light dark:text-light"
                       required
                     />
                   </div>
-                  <div className="form-control">
-                    <label className="label">
-                      <span className="label-text dark:text-white">
-                        Email
-                      </span>
-                    </label>
+                  <div className="form-control my-4">
+                  
                     <input
                       name="user_email"
                       type="email"
                       placeholder="Enter Your Email"
-                      className="input input-bordered"
+                      className="input input-bordered  dark:bg-dark dark:caret-light dark:text-light"
                       required
                     />
                   </div>
-                  <div className="form-control">
-                    <label className="label">
-                      <span className="label-text dark:text-white">
-                        Your Opinion
-                      </span>
-                    </label>
+                  <div className="form-control my-4">
+                    
                     <textarea
                       name="message"
                       type="text"
                       required
                       placeholder="Please Write Your Opinion or Any Feedbacks"
-                      className="textarea textarea-bordered"
+                      className="textarea textarea-bordered  dark:bg-dark dark:caret-light dark:text-light"
                     />
                   </div>
                   <div className="form-control mt-6">

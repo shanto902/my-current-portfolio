@@ -133,7 +133,7 @@ const About = () => {
                 wide range of demands.
               </p>
             </div>
-            <div className="col-span-3 lg:col-span-4 sm:col-span-10 md:col-span-8  relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light">
+            <div className="col-span-3 lg:col-span-6 xl:col-span-6  sm:col-span-10 md:col-span-10  relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light">
               {!showVideo && (
                 <div
                   className=" aspect-1 w-full h-auto rounded-2xl relative cursor-pointer"
