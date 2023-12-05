@@ -53,7 +53,7 @@ const Experience = () => {
           <Details
             position="Web Developer"
             company="ServiceChai"
-            companyLink="www.servicechai.com"
+            companyLink="https://www.servicechai.com"
             time="2022-Present"
             address="Dhaka, Bangladesh"
             work="Designed and developed responsive websites using WordPress with custom themes and plugins, Collaborated on creating an efficient Office HR Management system using Laravel and REST API with MySQL., Conducted thorough testing and debugging for smooth functioning of websites and applications."
@@ -61,7 +61,7 @@ const Experience = () => {
           <Details
             position="App Developer"
             company="Deshi Inc."
-            companyLink="www.deshiinc.com"
+            companyLink="https://www.facebook.com/DeshiInc"
             time="2017-2019"
             address="Dhaka, Bangladesh"
             work="Worked on various app for Playstore, Created games on Unity3D, Also worked on e-commerce website development"
@@ -69,7 +69,7 @@ const Experience = () => {
           <Details
             position="IT & Logistics Support Officer"
             company="Biscotex Far East LLC."
-            companyLink="#"
+            companyLink="https://www.facebook.com/pages/Biscotex%20Far%20East%20Llc/702827369747500/"
             time="2014-2015"
             address="Dhaka, Bangladesh"
             work="Worked mainly as a graphics designer. Worked on IT related sector"

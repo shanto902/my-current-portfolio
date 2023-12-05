@@ -5,6 +5,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
 import project1 from "../../public/images/projects/run-shadow-run-banner.jpg";
 import project2 from "../../public/images/projects/lehalua-banner.png";
 import project3 from "../../public/images/projects/nebula-banner.jpeg";
@@ -15,7 +16,9 @@ import project7 from "../../public/images/projects/servicechai-banner.png";
 import project8 from "../../public/images/projects/musically.png";
 import project9 from "../../public/images/projects/bistro_boss.png";
 import project10 from "../../public/images/projects/toy-verse.png";
-import { motion } from "framer-motion";
+import project11 from "../../public/images/projects/dipalo.png";
+import project12 from "../../public/images/projects/dvbt.png";
+import project13 from "../../public/images/projects/sthapattya-nirman.jpeg";
 import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
@@ -95,7 +98,7 @@ const FeaturedProjects = ({
                     className=" ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold border-2 border-solid border-dark hover:border-dark hover:bg-light hover:text-dark
             dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light sm:px-4 sm:text-base"
                   >
-                   Client Side
+                    Client Side
                   </Link>
                   <Link
                     href={githubServerSide}
@@ -103,9 +106,8 @@ const FeaturedProjects = ({
                     className=" ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold border-2 border-solid border-dark hover:border-dark hover:bg-light hover:text-dark
             dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light sm:px-4 sm:text-base"
                   >
-                   Server Side
+                    Server Side
                   </Link>
-                
                 </div>
               </div>
             </div>
@@ -188,6 +190,30 @@ const projects = () => {
           <div className=" grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className=" col-span-12">
               <FeaturedProjects
+                title="Sthapattaya O Nirman"
+                img={project13}
+                summery="🏛️ Welcome to Sthapttya O Nirman, a haven by Building for Future. Immerse yourself in curated articles on innovative designs, sustainability, and cutting-edge technologies.
+
+                🌐 Tech-Powered Exploration •
+                Next.js 14, Directus CMS, AWS S3, and Tailwind CSS form the backbone, ensuring a seamless, tech-forward experience on any device.
+                
+                🌍 Global Insight, Local Experience •
+                Multilingual support (i18n) invites a global audience to engage with the latest architectural trends and innovations.
+                
+                🎨 Tailored Design Excellence •
+                Crafted with UI/UX maestro Ashiqur Rahman, our custom interface promises a visually stunning and user-friendly journey.
+                
+                🔗 Connect and Engage •
+                Join our community, connect with architectural visionaries, and stay updated on the latest. Embark on an inspiring journey with Sthapttya O Nirman. Your gateway to the extraordinary awaits!"
+                link="https://sthapattaya-o-nirman-frontend.vercel.app/#"
+                // githubClientSide="https://github.com/shanto902/Toy-Verse-Client"
+                // githubServerSide="https://github.com/shanto902/Toy-Verse-Server"
+                type="Next JS Website"
+                technology="next.js, Directus, Typescript, Vercel, Tailwind CSS, Git, AWS"
+              />
+            </div>
+            <div className=" col-span-12">
+              <FeaturedProjects
                 title="Musically"
                 img={project8}
                 summery="Designed and developed a clean and modern website using Mongo, Express, ReactJs, Node
@@ -243,7 +269,7 @@ const projects = () => {
             </div>
             <div className=" col-span-6 sm:col-span-12">
               <Project
-                title=" DWD Global Education"
+                title="DWD Global Education"
                 img={project4}
                 link="https://dwdglobaledu.com/"
                 type="Wordpress Website"
@@ -283,6 +309,24 @@ const projects = () => {
                 summery="It’s an endless running 2D platform mobile game, made on Unity3D with C# language."
                 link="https://apkcombo.com/run-shadow-run/com.deshiinc.runshadowrun/"
                 type="Android Game"
+              />
+            </div>
+
+            <div className=" col-span-6 sm:col-span-12">
+              <Project
+                title="Dipalo Ventures"
+                img={project11}
+                link="https://dipaloventures.com/"
+                type="Wordpress Website"
+              />
+            </div>
+
+            <div className=" col-span-6 sm:col-span-12">
+              <Project
+                title="Dipalo Ventures Built Tech"
+                img={project12}
+                link="https://www.dvbt.pt/"
+                type="Wordpress Website"
               />
             </div>
 
