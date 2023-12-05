@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
-import profilePic from "../../public/images/profile/bighead.svg";
+import profilePic from "../../public/lottie.json";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
@@ -10,6 +10,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 
+import Lottie from "react-lottie-player";
 // CommonJS
 
 export default function Home() {
@@ -43,10 +44,8 @@ export default function Home() {
             timer: 1500,
             customClass: {
               popup: "dark:bg-dark dark:text-light rounded-xl",
-            }
+            },
           });
-
-
         },
         (error) => {
           setLoading(false);
@@ -59,7 +58,7 @@ export default function Home() {
             timer: 1500,
             customClass: {
               popup: "dark:bg-dark dark:text-light rounded-xl",
-            }
+            },
           });
           setMessage("Failed to send email. Please try again later.");
           console.log(error.text);
@@ -82,13 +81,7 @@ export default function Home() {
         <Layout className="pt-0 md:pt-16 sm:pt-8">
           <div className="flex items-center justify-between w-full lg:flex-col">
             <div className="w-1/2 md:w-full">
-              <Image
-                src={profilePic}
-                alt="Ashik Ali Shanto"
-                className="w-full h-auto lg:hidden md:inline-block md:w-full lg:text-center"
-                priority
-                sizes="(max-width: 768px) 100vw, (max-width:1200px) 50vw, 50vw"
-              />
+              <Lottie loop animationData={profilePic} play />
             </div>
             <div className="w-1/2 flex flex-col items-center self-center lg:w-full">
               <AnimatedText
@@ -110,15 +103,14 @@ export default function Home() {
                 I&apos;m your person! I love collaborating with clients to
                 create custom solutions that meet their specific needs. So
                 let&apos;s connect and chat about how I can help bring your
-                vision to life. Wanna know more about myself??
-                {" "}
+                vision to life. Wanna know more about myself??{" "}
                 <Link href={`/about`} className={`relative group`}>
                   <span className="text-primary dark:text-primaryDark">
-                   Check Out My profile
+                    Check Out My profile
                   </span>
                 </Link>
               </p>
-              
+
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
                   href="/Ashik_Ali_Shanto_Resume.pdf"
@@ -137,8 +129,6 @@ export default function Home() {
                 </button>
               </div>
 
-        
-
               <dialog id="my_modal_2" className="modal">
                 <form
                   ref={form}
@@ -147,10 +137,9 @@ export default function Home() {
                   className="modal-box dark:bg-dark"
                 >
                   <h3 className="font-bold text-lg dark:text-white text-center">
-                  Drop me a Line 
+                    Drop me a Line
                   </h3>
                   <div className="form-control my-4">
-                  
                     <input
                       name="user_name"
                       type="text"
@@ -160,7 +149,6 @@ export default function Home() {
                     />
                   </div>
                   <div className="form-control my-4">
-                  
                     <input
                       name="user_email"
                       type="email"
@@ -170,7 +158,6 @@ export default function Home() {
                     />
                   </div>
                   <div className="form-control my-4">
-                    
                     <textarea
                       name="message"
                       type="text"
