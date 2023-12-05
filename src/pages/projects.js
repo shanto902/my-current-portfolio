@@ -192,7 +192,7 @@ const projects = () => {
               <FeaturedProjects
                 title="Sthapattaya O Nirman"
                 img={project13}
-                summery="🏛️ Welcome to Sthapttya O Nirman, a haven by Building for Future. Immerse yourself in curated articles on innovative designs, sustainability, and cutting-edge technologies.
+                summery="Welcome to Sthapttya O Nirman, a haven by Building for Future. Immerse yourself in curated articles on innovative designs, sustainability, and cutting-edge technologies.
 
                 🌐 Tech-Powered Exploration •
                 Next.js 14, Directus CMS, AWS S3, and Tailwind CSS form the backbone, ensuring a seamless, tech-forward experience on any device.
@@ -312,7 +312,7 @@ const projects = () => {
               />
             </div>
 
-            <div className=" col-span-6 sm:col-span-12">
+            {/* <div className=" col-span-6 sm:col-span-12">
               <Project
                 title="Dipalo Ventures"
                 img={project11}
@@ -328,7 +328,7 @@ const projects = () => {
                 link="https://www.dvbt.pt/"
                 type="Wordpress Website"
               />
-            </div>
+            </div> */}
 
             <div className=" col-span-12 ">
               <FeaturedProjects
