@@ -59,7 +59,7 @@ const Experience = () => {
             position="Web Developer"
             company="ServiceChai"
             companyLink="https://www.servicechai.com"
-            time="2022-Present"
+            time="2022-2023"
             address="Dhaka, Bangladesh"
             work="Designed and developed responsive websites using WordPress with custom themes and plugins, Collaborated on creating an efficient Office HR Management system using Laravel and REST API with MySQL., Conducted thorough testing and debugging for smooth functioning of websites and applications."
           />
