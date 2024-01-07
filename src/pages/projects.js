@@ -41,7 +41,7 @@ const projects = () => {
               <FeaturedProjects
                 title="Sthapattaya O Nirman"
                 img={project13}
-                summery="Welcome to Sthapttya O Nirman, a haven by Building for Future. Immerse yourself in curated articles on innovative designs, sustainability, and cutting-edge technologies.
+                summery="Welcome to Sthapttya O Nirman, a haven by Building for Future. Immerse yourself in curated articles on innovative designs, sustainability, and cutting-e dge technologies.
 
                 🌐 Tech-Powered Exploration •
                 Next.js 14, Directus CMS, AWS S3, and Tailwind CSS form the backbone, ensuring a seamless, tech-forward experience on any device.
@@ -54,7 +54,7 @@ const projects = () => {
                 
                 🔗 Connect and Engage •
                 Join our community, connect with architectural visionaries, and stay updated on the latest. Embark on an inspiring journey with Sthapttya O Nirman. Your gateway to the extraordinary awaits!"
-                link="https://sthapattaya-o-nirman-frontend.vercel.app/#"
+                link="https://sthapattya-o-nirman.com/"
                 // githubClientSide="https://github.com/shanto902/Toy-Verse-Client"
                 // githubServerSide="https://github.com/shanto902/Toy-Verse-Server"
                 type="Next JS Website"
